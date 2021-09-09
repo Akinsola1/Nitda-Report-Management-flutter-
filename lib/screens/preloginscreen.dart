@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:nitda_report_management/register.dart';
 import 'package:nitda_report_management/screens/homepage.dart';
-import 'package:nitda_report_management/screens/registerpage.dart';
 
 import 'login_screen.dart';
 
@@ -19,50 +19,51 @@ class preloginscreen extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          Container(
-            width: 300,
-            height: 60,
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.grey.shade300,
-                width: 2,
+           GestureDetector(
+             onTap: () {
+               Navigator.push(context, MaterialPageRoute(builder: (context) =>register() ));
+             },
+             child: Container(
+                width: 300,
+                height: 60,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey.shade300,
+                    width: 2,
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              child: Container(
+                padding: EdgeInsets.all(15),
+                child: Text(
+                  "Register",
+                  textAlign:TextAlign.start,
+                   style: TextStyle(fontSize: 20))
+              ),),
+           ),
+          
+           Container(
+              width: 300,
+              height: 60,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey.shade300,
+                  width: 2,
+                ),
+                borderRadius: BorderRadius.circular(10),
               ),
-              borderRadius: BorderRadius.circular(10),
-            ),
             child: GestureDetector(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => register()));
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => login_screen()));
               },
               child: Container(
-                  padding: EdgeInsets.all(15),
-                  child: Text("Register",
-                      textAlign: TextAlign.start,
-                      style: TextStyle(fontSize: 20))),
-            ),
-          ),
-          Container(
-            width: 300,
-            height: 60,
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.grey.shade300,
-                width: 2,
+                padding: EdgeInsets.all(15),
+                child: Text(
+                  "Login",
+                  textAlign:TextAlign.start,
+                   style: TextStyle(fontSize: 20))
               ),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => login_screen()));
-              },
-              child: Container(
-                  padding: EdgeInsets.all(15),
-                  child: Text("Login",
-                      textAlign: TextAlign.start,
-                      style: TextStyle(fontSize: 20))),
-            ),
-          ),
+            ),),
           const SizedBox(
             height: 150,
           ),

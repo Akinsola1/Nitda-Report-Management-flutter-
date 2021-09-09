@@ -35,6 +35,7 @@ class _add_reportState extends State<add_report> {
               child: Container(
                 padding: EdgeInsets.only(top: 23, left: 17),
                 child: TextFormField(
+                  obscureText: true,
                 cursorColor: Colors.black,
                 style: const TextStyle(
                   color: Colors.black,

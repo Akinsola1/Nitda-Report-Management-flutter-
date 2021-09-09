@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -5,13 +7,34 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:nitda_report_management/screens/add_report.dart';
 import 'package:nitda_report_management/screens/drawer.dart';
+import 'package:http/http.dart' as http;
 
 class homePage extends StatefulWidget {
-  const homePage({Key? key}) : super(key: key);
+  var token;
+  homePage({Key? key, required this.token}) : super(key: key);
   @override
   State<homePage> createState() => _homePageState();
 }
+
 class _homePageState extends State<homePage> {
+  var userEmail;
+  void getUserData() async {
+    var url = Uri.parse('https://lit-shore-55440.herokuapp.com/api/user');
+    var response = await http.get(url, headers: {"token": "${widget.token}"});
+    var data = response.body;
+    Map decodedData = jsonDecode(data);
+    Map user = decodedData['user'];
+    setState(() {
+      userEmail = user['email'];
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getUserData();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,21 +43,26 @@ class _homePageState extends State<homePage> {
         centerTitle: true,
         backgroundColor: Colors.green.shade700,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.settings),)
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.settings),
+          )
         ],
       ),
       drawer: Drawer(
-        child: drawer(),
+        child: drawer(
+          userEmail: userEmail,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.green.shade700,
           onPressed: () {
             Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => add_report(),
-                    ),
-                  );
+              context,
+              MaterialPageRoute(
+                builder: (context) => add_report(),
+              ),
+            );
           },
           child: const Icon(
             Icons.add,
@@ -57,7 +85,8 @@ class _homePageState extends State<homePage> {
                             children: [
                               const Text(
                                 'Reviewed Report',
-                                style: TextStyle(color: Colors.white, fontSize: 25),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 25),
                               ),
                               const SizedBox(
                                 height: 20,
@@ -66,8 +95,8 @@ class _homePageState extends State<homePage> {
                                 child: Text(
                                   '15',
                                   textAlign: TextAlign.center,
-                                  style:
-                                      TextStyle(color: Colors.white, fontSize: 45),
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 45),
                                 ),
                               )
                             ],
@@ -89,7 +118,8 @@ class _homePageState extends State<homePage> {
                             children: [
                               Text(
                                 'Unreviewed Report',
-                                style: TextStyle(color: Colors.white, fontSize: 25),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 25),
                               ),
                               SizedBox(
                                 height: 20,
@@ -98,8 +128,8 @@ class _homePageState extends State<homePage> {
                                 child: Text(
                                   '1',
                                   textAlign: TextAlign.center,
-                                  style:
-                                      TextStyle(color: Colors.white, fontSize: 45),
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 45),
                                 ),
                               )
                             ],
@@ -109,9 +139,6 @@ class _homePageState extends State<homePage> {
                             shape: BoxShape.rectangle,
                             color: Colors.green.shade700,
                           ))),
-      
-      
-      
                   Card(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(150),
@@ -124,8 +151,8 @@ class _homePageState extends State<homePage> {
                             children: [
                               Text(
                                 'Rejected Report',
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 25),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 25),
                               ),
                               SizedBox(
                                 height: 20,
@@ -189,7 +216,8 @@ class _homePageState extends State<homePage> {
                             padding: const EdgeInsets.only(top: 3, bottom: 3),
                             child: Row(
                               children: [
-                                Container(child: Icon(Icons.arrow_forward_sharp)),
+                                Container(
+                                    child: Icon(Icons.arrow_forward_sharp)),
                                 SizedBox(width: 20),
                                 Container(
                                   child: Text(
@@ -213,7 +241,8 @@ class _homePageState extends State<homePage> {
                             padding: const EdgeInsets.only(top: 3, bottom: 3),
                             child: Row(
                               children: [
-                                Container(child: Icon(Icons.arrow_forward_sharp)),
+                                Container(
+                                    child: Icon(Icons.arrow_forward_sharp)),
                                 SizedBox(width: 20),
                                 Container(
                                   child: Text(
@@ -237,7 +266,8 @@ class _homePageState extends State<homePage> {
                             padding: const EdgeInsets.only(top: 3, bottom: 3),
                             child: Row(
                               children: [
-                                Container(child: Icon(Icons.arrow_forward_sharp)),
+                                Container(
+                                    child: Icon(Icons.arrow_forward_sharp)),
                                 SizedBox(width: 20),
                                 Container(
                                   child: Text(
@@ -261,11 +291,12 @@ class _homePageState extends State<homePage> {
                             padding: const EdgeInsets.only(top: 3, bottom: 3),
                             child: Row(
                               children: [
-                                Container(child: Icon(Icons.arrow_forward_sharp)),
+                                Container(
+                                    child: Icon(Icons.arrow_forward_sharp)),
                                 SizedBox(width: 20),
                                 Container(
                                   child: Text(
-                                    "Report 4",
+                                    "Report 3",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 22.0),
@@ -280,8 +311,9 @@ class _homePageState extends State<homePage> {
                   ),
                 ),
               ),
-      
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               Container(
                 child: Card(
                   elevation: 5.0,
@@ -295,8 +327,9 @@ class _homePageState extends State<homePage> {
                           child: Row(
                             children: [
                               Container(
-                                child: Icon(Icons.timer_sharp,)
-                              ),
+                                  child: Icon(
+                                Icons.timer_sharp,
+                              )),
                               SizedBox(width: 10),
                               Container(
                                 child: Text(
@@ -317,7 +350,8 @@ class _homePageState extends State<homePage> {
                             padding: const EdgeInsets.only(top: 3, bottom: 3),
                             child: Row(
                               children: [
-                                Container(child: Icon(Icons.arrow_forward_sharp)),
+                                Container(
+                                    child: Icon(Icons.arrow_forward_sharp)),
                                 SizedBox(width: 20),
                                 Container(
                                   child: Text(
@@ -341,7 +375,8 @@ class _homePageState extends State<homePage> {
                             padding: const EdgeInsets.only(top: 3, bottom: 3),
                             child: Row(
                               children: [
-                                Container(child: Icon(Icons.arrow_forward_sharp)),
+                                Container(
+                                    child: Icon(Icons.arrow_forward_sharp)),
                                 SizedBox(width: 20),
                                 Container(
                                   child: Text(
@@ -365,7 +400,8 @@ class _homePageState extends State<homePage> {
                             padding: const EdgeInsets.only(top: 3, bottom: 3),
                             child: Row(
                               children: [
-                                Container(child: Icon(Icons.arrow_forward_sharp)),
+                                Container(
+                                    child: Icon(Icons.arrow_forward_sharp)),
                                 SizedBox(width: 20),
                                 Container(
                                   child: Text(
@@ -389,7 +425,8 @@ class _homePageState extends State<homePage> {
                             padding: const EdgeInsets.only(top: 3, bottom: 3),
                             child: Row(
                               children: [
-                                Container(child: Icon(Icons.arrow_forward_sharp)),
+                                Container(
+                                    child: Icon(Icons.arrow_forward_sharp)),
                                 SizedBox(width: 20),
                                 Container(
                                   child: Text(
@@ -408,9 +445,6 @@ class _homePageState extends State<homePage> {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 30,
-              )
             ],
           ),
         ),

@@ -76,9 +76,7 @@ class _add_report3State extends State<add_report3> {
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -89,10 +87,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -117,7 +112,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -131,10 +126,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -159,7 +151,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -173,10 +165,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -201,7 +190,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -216,6 +205,7 @@ class _add_report3State extends State<add_report3> {
                 ),
               ),
             ),
+
             SingleChildScrollView(
               child: Container(
                 child: Column(
@@ -268,9 +258,7 @@ class _add_report3State extends State<add_report3> {
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -281,10 +269,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -309,7 +294,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -323,10 +308,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -351,7 +333,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -365,10 +347,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -393,7 +372,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -407,7 +386,7 @@ class _add_report3State extends State<add_report3> {
                   ],
                 ),
               ),
-            ),
+            ), 
             SingleChildScrollView(
               child: Container(
                 child: Column(
@@ -460,9 +439,7 @@ class _add_report3State extends State<add_report3> {
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -473,10 +450,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -501,7 +475,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -515,10 +489,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -543,7 +514,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -557,10 +528,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -585,7 +553,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -652,9 +620,7 @@ class _add_report3State extends State<add_report3> {
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -665,10 +631,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -693,7 +656,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -707,10 +670,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -735,7 +695,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -749,10 +709,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -777,7 +734,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -844,9 +801,7 @@ class _add_report3State extends State<add_report3> {
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -857,10 +812,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -885,7 +837,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -899,10 +851,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -927,7 +876,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -941,10 +890,7 @@ class _add_report3State extends State<add_report3> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -969,7 +915,7 @@ class _add_report3State extends State<add_report3> {
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1050,9 +996,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -1063,10 +1007,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1089,9 +1030,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1105,10 +1046,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1131,9 +1069,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1147,10 +1085,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -1173,9 +1108,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1242,9 +1177,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -1255,10 +1188,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1283,7 +1213,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1297,10 +1227,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1323,9 +1250,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1339,10 +1266,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -1365,9 +1289,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1445,9 +1369,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -1458,10 +1380,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1484,9 +1403,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1500,10 +1419,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1526,9 +1442,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1542,10 +1458,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -1568,9 +1481,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1637,9 +1550,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -1650,10 +1561,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1676,9 +1584,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Numbert',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1692,10 +1600,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1718,9 +1623,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1734,10 +1639,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -1760,9 +1662,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1799,7 +1701,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                       child: const Padding(
                         padding: const EdgeInsets.all(15),
                         child: Text(
-                          'OFFLOAD AUXILIARY CHANGE OVER SWITCH MIN OF 100A',
+'OFFLOAD AUXILIARY CHANGE OVER SWITCH MIN OF 100A',
                           style: TextStyle(
                             fontFamily: 'regular',
                             fontSize: 18,
@@ -1829,9 +1731,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -1842,10 +1742,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1868,9 +1765,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Numbert',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1884,10 +1781,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -1910,9 +1804,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1926,10 +1820,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -1952,9 +1843,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -1984,7 +1875,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                       height: 10,
                     ),
                     Container(
-                      height: 70,
+                      height: 100,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.green.shade300),
@@ -2021,9 +1912,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -2034,10 +1923,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -2060,9 +1946,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2076,10 +1962,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -2102,9 +1985,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2118,10 +2001,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -2144,9 +2024,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2176,7 +2056,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                       height: 10,
                     ),
                     Container(
-                      height: 70,
+                      height: 100,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.green.shade300),
@@ -2213,9 +2093,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -2226,10 +2104,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -2252,9 +2127,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2268,10 +2143,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -2294,9 +2166,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2310,10 +2182,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -2336,9 +2205,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2405,9 +2274,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -2418,10 +2285,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -2444,9 +2308,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Model Number',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2460,10 +2324,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -2486,9 +2347,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter Quantity',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2502,10 +2363,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -2528,9 +2386,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2602,9 +2460,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -2615,52 +2471,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
-                        Container(
-                          width: 350,
-                          height: 50,
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.green.shade300,
-                              width: 2,
-                            ),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Container(
-                            padding: EdgeInsets.only(top: 20, left: 17),
-                            child: Padding(
-                              padding: const EdgeInsets.all(5),
-                              child: TextFormField(
-                                maxLines: 20,
-                                cursorColor: Colors.black,
-                                style: const TextStyle(
-                                  color: Colors.black,
-                                ),
-                                decoration: InputDecoration.collapsed(
-                                  hintStyle: TextStyle(
-                                    color: Colors.grey,
-                                  ),
-                                  hintText: 'Enter Model Number',
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -2685,7 +2496,46 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
+                        Container(
+                          width: 350,
+                          height: 50,
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.green.shade300,
+                              width: 2,
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Container(
+                            padding: EdgeInsets.only(top: 20, left: 17),
+                            child: Padding(
+                              padding: const EdgeInsets.all(5),
+                              child: TextFormField(
+                                maxLines: 20,
+                                cursorColor: Colors.black,
+                                style: const TextStyle(
+                                  color: Colors.black,
+                                ),
+                                decoration: InputDecoration.collapsed(
+                                  hintStyle: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2699,10 +2549,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -2725,9 +2572,9 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2794,9 +2641,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -2807,10 +2652,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -2835,7 +2677,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2849,10 +2691,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -2877,7 +2716,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2891,10 +2730,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -2919,7 +2755,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -2949,7 +2785,7 @@ MPPT SOLAR CHARGE CONTROLLER OPTION (PLEASE, CHOOSE ONE):
                       height: 10,
                     ),
                     Container(
-                      height: 180,
+                      height: 200,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.green.shade300),
@@ -2987,9 +2823,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                               Checkbox(
                                   value: no,
                                   onChanged: (value) {
-                                    setState(() {
-                                      no = value!;
-                                    });
+                                    setState(() {});
                                   })
                             ]),
                       ],
@@ -3000,10 +2834,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3028,7 +2859,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3042,10 +2873,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3070,7 +2898,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3084,10 +2912,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -3112,7 +2937,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3190,10 +3015,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3218,7 +3040,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3232,10 +3054,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3260,7 +3079,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3274,10 +3093,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -3302,7 +3118,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3332,7 +3148,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                       height: 10,
                     ),
                     Container(
-                      height: 120,
+                      height: 150,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.green.shade300),
@@ -3380,10 +3196,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3408,7 +3221,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3422,10 +3235,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3450,7 +3260,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3464,10 +3274,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -3492,7 +3299,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3522,7 +3329,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                       height: 10,
                     ),
                     Container(
-                      height: 70,
+                      height: 100,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.green.shade300),
@@ -3570,10 +3377,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3598,7 +3402,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3612,10 +3416,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3640,7 +3441,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3654,10 +3455,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -3682,7 +3480,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3760,10 +3558,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3788,7 +3583,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3802,10 +3597,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3830,7 +3622,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3844,10 +3636,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -3872,7 +3661,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3950,10 +3739,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -3978,7 +3764,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -3992,10 +3778,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4020,7 +3803,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product'
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4034,10 +3817,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -4062,7 +3842,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4140,10 +3920,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4168,7 +3945,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4182,10 +3959,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4210,7 +3984,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4224,10 +3998,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -4252,7 +4023,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4330,10 +4101,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4358,7 +4126,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4372,10 +4140,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4400,7 +4165,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4414,10 +4179,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -4442,7 +4204,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4520,10 +4282,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4548,7 +4307,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4562,10 +4321,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4590,7 +4346,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4604,10 +4360,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -4632,7 +4385,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4710,10 +4463,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4738,7 +4488,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4752,10 +4502,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4780,7 +4527,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4794,10 +4541,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -4822,7 +4566,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4900,10 +4644,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Model Number',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Model Number', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4928,7 +4669,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4942,10 +4683,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Quantity',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Quantity', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 50,
@@ -4970,7 +4708,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                   hintStyle: TextStyle(
                                     color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -4984,10 +4722,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'Obseravtion',
-                          style: TextStyle(fontFamily: 'regular', fontSize: 17),
-                        ),
+                        Text('Obseravtion', style:  TextStyle(fontFamily: 'regular', fontSize: 17) ,),
                         Container(
                           width: 350,
                           height: 150,
@@ -5010,9 +4745,9 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                                 ),
                                 decoration: InputDecoration.collapsed(
                                   hintStyle: TextStyle(
-                                    color: Colors.grey,
+                                    color: Colors.white,
                                   ),
-                                  hintText: 'Enter State of Particular Product',
+                                  hintText: '',
                                 ),
                               ),
                             ),
@@ -5027,7 +4762,7 @@ PRINT SPEED HIGH SPEED AND PARALLEL CONNECTION OR ITS EQUIVALENT.""",
                 ),
               ),
             ),
-           
+            
           ],
         ));
   }

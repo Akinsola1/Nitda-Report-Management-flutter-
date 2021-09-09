@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nitda_report_management/screens/homepage.dart';
+import 'package:http/http.dart' as http;
+import 'package:fluttertoast/fluttertoast.dart';
 
 class login_screen extends StatefulWidget {
   login_screen({Key? key}) : super(key: key);
@@ -11,7 +15,9 @@ class login_screen extends StatefulWidget {
 
 /// controller
 TextEditingController _emailController = TextEditingController();
-TextEditingController _passwordcontroller = TextEditingController();
+TextEditingController _passwordController = TextEditingController();
+String email = '';
+String password = '';
 
 /// controller
 class _login_screenState extends State<login_screen> {
@@ -24,136 +30,158 @@ class _login_screenState extends State<login_screen> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             // ignore: avoid_unnecessary_containers
-            Container(
-              child: Image.asset('assets/images/NITDA-logo-newest-1.jpg', height: 200,),
+            Image.asset(
+              'assets/images/NITDA-logo-newest-1.jpg',
+              height: 250,
             ),
-            SizedBox(
-              height: 25,
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 10,
+              ),
+              child: Container(
+                child: const Text(
+                  'Login',
+                  style: TextStyle(
+                    fontSize: 30,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(right: 300),
+              child: const Text(
+                'Email',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                textAlign: TextAlign.start,
+              ),
+            ),
+            const SizedBox(
+              height: 10,
             ),
             Center(
-              child: Padding(
-                padding: const EdgeInsets.only(right: 230,bottom: 20),
+              child: Container(
+                width: 350,
+                height: 60,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey.shade300,
+                    width: 2,
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 child: Container(
-                  child: Text(
-                    'Login',
-                    style: TextStyle(
+                  padding: EdgeInsets.all(15),
+                  child: TextFormField(
+                    onChanged: (value) {
+                      setState(() {
+                        email = value.trim();
+                      });
+                    },
+                    controller: _emailController,
+                    cursorColor: Colors.black,
+                    style: const TextStyle(
                       color: Colors.black,
-                      fontSize: 40
+                    ),
+                    decoration: const InputDecoration.collapsed(
+                      hintStyle: TextStyle(
+                        color: Colors.grey,
+                      ),
+                      hintText: 'staff1@Nitda.outlook.com',
                     ),
                   ),
                 ),
               ),
             ),
+            /////////
+            ///
             SizedBox(
-              height: 25,
+              height: 30,
             ),
             Container(
-              padding: EdgeInsets.only(right:300 ),
-              child: const Text(
-              'Email',
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),
-              textAlign: TextAlign.start,
-            ),
-            ),
-           const SizedBox(
-              height: 10,
-            ),
-            Container(
-                width: 350,
-                height: 60,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.grey.shade300,
-                    width: 2,
-                  ),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              child: Container(
-                padding: EdgeInsets.all(18),
-                child: TextFormField(
-                  controller: _emailController,
-                cursorColor: Colors.black,
-                style: const TextStyle(
-                  color: Colors.black,
-                ),
-                decoration: const InputDecoration.collapsed(
-                  hintStyle: TextStyle(
-                    color: Colors.grey,
-                  ),
-                  hintText: 'staff1@Nitda.outlook.com',
-                ),
-              ),
-              ),
-              ),
-      /////////
-      ///
-           SizedBox( 
-         height: 30,
-       ),
-        Container(
-              padding: EdgeInsets.only(right:270 ),
+              padding: EdgeInsets.only(right: 270),
               child: Text(
-              'Password',
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),
-              textAlign: TextAlign.start,
-            ),
+                'Password',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                textAlign: TextAlign.start,
+              ),
             ),
             const SizedBox(
               height: 10,
             ),
             Container(
-                width: 350,
-                height: 60,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.grey.shade300,
-                    width: 2,
-                  ),
-                  borderRadius: BorderRadius.circular(10),
+              width: 350,
+              height: 60,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey.shade300,
+                  width: 2,
                 ),
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: Container(
                 padding: EdgeInsets.only(top: 23, left: 17),
                 child: TextFormField(
-                controller: _passwordcontroller,
+                  onChanged: (value) {
+                    setState(() {
+                      password = value.trim();
+                    });
+                  },
+                  controller: _passwordController,
                   obscureText: true,
-                cursorColor: Colors.black,
-                style: const TextStyle(
-                  color: Colors.black,
-                ),
-                decoration: InputDecoration.collapsed(
-                  hintStyle: TextStyle(
-                    color: Colors.grey,
+                  cursorColor: Colors.black,
+                  style: const TextStyle(
+                    color: Colors.black,
                   ),
-                  hintText: '********',
+                  decoration: const InputDecoration.collapsed(
+                    hintStyle: TextStyle(
+                      color: Colors.grey,
+                    ),
+                    hintText: '********',
+                  ),
                 ),
               ),
-              ),
-              ),
-                SizedBox(
-                  height: 70
-                ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8)
-                ),
-                  height: 50,
-                  width: 370,
-                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                    child: RaisedButton(
-                      textColor: Colors.white,
-                      color: Colors.green.shade800,
-                      child: Text('Login'),
-                      onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => homePage()));
-                      },
-                    )),
+            ),
+            const SizedBox(height: 70),
+            Container(
+                height: 50,
+                width: 370,
+                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                child: RaisedButton(
+                  textColor: Colors.white,
+                  color: Colors.green.shade800,
+                  child: Text('Login'),
+                  onPressed: () {
+                    authentication(email, password);
+                  },
+                )),
           ],
         ),
       ),
     );
   }
 
-  Future login( String _emailfieldController, String _passwordController) {
-    
+  void authentication(String lemail, String lpassword) async {
+    setState(() {
+      email = lemail;
+    });
+    var url = Uri.parse('https://lit-shore-55440.herokuapp.com/api/auth/login');
+    var response =
+        await http.post(url, body: {'email': lemail, 'password': lpassword});
+    var msg = response.body;
+    Map decodemsg = jsonDecode(msg);
+    if (response.statusCode == 403 || response.statusCode == 406) {
+      Fluttertoast.showToast(
+          msg: '${decodemsg['msg']}',
+          gravity: ToastGravity.CENTER,
+          textColor: Colors.white,
+          fontSize: 16.0);
+    } else {
+      var token = decodemsg['token'];
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
+          builder: (context) => homePage(
+                token: token,
+              )));
+    }
+    // print('Token: ${decodemsg['token']}');
   }
 }
