@@ -42,6 +42,7 @@ dependencies:
   flutter_polyline_points: ^1.0.0
   http: ^0.13.3
   fluttertoast: ^8.0.8
+  flash: ^2.0.1
 
 
 dev_dependencies:

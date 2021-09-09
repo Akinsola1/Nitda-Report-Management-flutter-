@@ -1,32 +1,32 @@
 import 'dart:convert';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nitda_report_management/screens/homepage.dart';
-import 'package:http/http.dart' as http;
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:nitda_report_management/screens/loading.dart';
+import 'package:nitda_report_management/screens/loadingpage2.dart';
+import 'package:nitda_report_management/screens/login_screen.dart';
+import 'package:http/http.dart' as http;
+import 'package:flash/flash.dart';
 
-class login_screen extends StatefulWidget {
-  login_screen({Key? key}) : super(key: key);
+class register extends StatefulWidget {
+  const register({Key? key}) : super(key: key);
 
   @override
-  _login_screenState createState() => _login_screenState();
+  _registerState createState() => _registerState();
 }
 
-/// controller
 TextEditingController _emailController = TextEditingController();
 TextEditingController _passwordController = TextEditingController();
-String email = '';
-String password = '';
-bool loading = false;
+TextEditingController _phoneNumberController = TextEditingController();
+bool laoding = false;
 
-/// controller
-class _login_screenState extends State<login_screen> {
+// String email = _emailController.text;
+// String password = _passwordController.text;
+// String phoneNumber = _phoneNumberController.text;
+class _registerState extends State<register> {
   @override
   Widget build(BuildContext context) {
     if (loading) {
-      return loading_page();
+      return loading_page2();
     } else {
       return Scaffold(
         backgroundColor: Colors.white,
@@ -41,14 +41,14 @@ class _login_screenState extends State<login_screen> {
               ),
               Container(
                 child: const Text(
-                  'Login',
+                  'Create Account',
                   style: TextStyle(
                     fontSize: 30,
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 50,
+              SizedBox(
+                height: 30,
               ),
               Container(
                 padding: EdgeInsets.only(right: 300),
@@ -75,11 +75,6 @@ class _login_screenState extends State<login_screen> {
                   child: Container(
                     padding: EdgeInsets.all(15),
                     child: TextFormField(
-                      onChanged: (value) {
-                        setState(() {
-                          email = value.trim();
-                        });
-                      },
                       controller: _emailController,
                       cursorColor: Colors.black,
                       style: const TextStyle(
@@ -90,6 +85,52 @@ class _login_screenState extends State<login_screen> {
                           color: Colors.grey,
                         ),
                         hintText: 'staff1@Nitda.outlook.com',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              /////////
+              ///
+              SizedBox(
+                height: 30,
+              ),
+
+              Container(
+                padding: EdgeInsets.only(right: 230),
+                child: const Text(
+                  'Phone Number',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                  textAlign: TextAlign.start,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Center(
+                child: Container(
+                  width: 350,
+                  height: 60,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey.shade300,
+                      width: 2,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Container(
+                    padding: EdgeInsets.all(15),
+                    child: TextFormField(
+                      controller: _phoneNumberController,
+                      cursorColor: Colors.black,
+                      style: const TextStyle(
+                        color: Colors.black,
+                      ),
+                      decoration: const InputDecoration.collapsed(
+                        hintStyle: TextStyle(
+                          color: Colors.grey,
+                        ),
+                        hintText: '+2340903565444',
                       ),
                     ),
                   ),
@@ -124,11 +165,6 @@ class _login_screenState extends State<login_screen> {
                 child: Container(
                   padding: EdgeInsets.only(top: 23, left: 17),
                   child: TextFormField(
-                    onChanged: (value) {
-                      setState(() {
-                        password = value.trim();
-                      });
-                    },
                     controller: _passwordController,
                     obscureText: true,
                     cursorColor: Colors.black,
@@ -152,12 +188,15 @@ class _login_screenState extends State<login_screen> {
                   child: RaisedButton(
                     textColor: Colors.white,
                     color: Colors.green.shade800,
-                    child: Text('Login'),
+                    child: Text('Create Account'),
                     onPressed: () {
-                      authentication(email, password);
                       setState(() {
                         loading = true;
                       });
+                      authentication(
+                          _emailController.text,
+                          _passwordController.text,
+                          _phoneNumberController.text);
                     },
                   )),
             ],
@@ -167,16 +206,18 @@ class _login_screenState extends State<login_screen> {
     }
   }
 
-  void authentication(String lemail, String lpassword) async {
-    setState(() {
-      email = lemail;
+  void authentication(String signupemail, String signuppassword,
+      String signupphonenumber) async {
+    var url =
+        Uri.parse('https://lit-shore-55440.herokuapp.com/api/auth/signup');
+    var response = await http.post(url, body: {
+      'email': signupemail,
+      'password': signuppassword,
+      'phone': signupphonenumber
     });
-    var url = Uri.parse('https://lit-shore-55440.herokuapp.com/api/auth/login');
-    var response =
-        await http.post(url, body: {'email': lemail, 'password': lpassword});
     var msg = response.body;
     Map decodemsg = jsonDecode(msg);
-    if (response.statusCode == 403 || response.statusCode == 406) {
+    if (response.statusCode == 200) {
       setState(() {
         loading = false;
       });
@@ -185,16 +226,14 @@ class _login_screenState extends State<login_screen> {
           gravity: ToastGravity.CENTER,
           textColor: Colors.white,
           fontSize: 16.0);
+          Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => login_screen()));
     } else {
       setState(() {
         loading = false;
       });
-      var token = decodemsg['token'];
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => homePage(
-                token: token,
-              )));
     }
-    // print('Token: ${decodemsg['token']}');
+    // print('Response Status: ${response.statusCode}');
+    // print('Response body: ${response.body}');
   }
 }

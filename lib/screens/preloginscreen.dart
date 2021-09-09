@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nitda_report_management/register.dart';
+import 'package:nitda_report_management/screens/register.dart';
 import 'package:nitda_report_management/screens/homepage.dart';
 
 import 'login_screen.dart';
